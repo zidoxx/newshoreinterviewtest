@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col">
+    <label for="houses" class="m-3">Select the house of your preference</label>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      name="houses"
+    >
+      <option *ngFor="let house of houses; let i = index" [value]="house">
+        {{ house }}
+      </option>
+    </select>
+  </div>
+  <div class="col">
+    <img src="" alt="image for houses or castle" />
+  </div>
+</div>
+<div class="row">
+  <div class="mb-3">
+    <label for="search" class="form-label">Search Character</label>
+    <input
+      type="email"
+      class="form-control"
+      id="search"
+      placeholder="Search by name or lastname..."
+    />
+  </div>
+</div>
