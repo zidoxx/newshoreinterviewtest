@@ -48,7 +48,7 @@ export class SearchComponent implements OnInit {
     //this clean the data variable to receive the new information from services
     this.data = [];
     //This service get all the characters information
-    this.characterService.getAllCharacters().subscribe((res:any)=>{
+    this.characterService.getAllCharacters().subscribe((res:Character[])=>{
       //Save the information in the data information to used in the component
       this.data = res;
       //Emit the info to use in the child component
@@ -64,7 +64,7 @@ export class SearchComponent implements OnInit {
     //this clean the data variable to receive the new information from services
     this.data = [];
     //Call the service and return the data searched by the house selected
-    this.characterService.getAllHouseFindByHouse(house).subscribe((res:any)=>{
+    this.characterService.getAllHouseFindByHouse(house).subscribe((res:Character[])=>{
       //Save the information in the data information to used in the component
       this.data = res;
       //Emit the info to use in the child component

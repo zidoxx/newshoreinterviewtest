@@ -1,3 +1,4 @@
+//Interface created to model the data into objects and avoid problems
 export interface Character {
     name?: string,
     species?: string,
