@@ -6,6 +6,12 @@ First open the carpet magicianschooleducation
 
 **cd magicianschooleducation**
 
+### Then run npm install
+
+**npm install**
+
+-To download all the elements to run the project.
+
 Inside of the carpet run the command **ng serve -o** to run the project.
 
 o run **ng test** to run unit test, this are basic test.
