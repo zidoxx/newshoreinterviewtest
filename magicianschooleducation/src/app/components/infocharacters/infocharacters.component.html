@@ -1,21 +1,21 @@
 <app-search (dataEvent)="getDataFromParent($event)"></app-search>
 
-<div class="row cards">
+<div class="rows cards">
   <div
-    class="card text-dark bg-light mb-3 mt-3"
-    style="width: 18rem"
+    class="infoCard mt-3 mb-3"
     *ngFor="let character of characters; let i = index"
   >
-    <div class="card-header">
-      <img
-        src="{{ character.image }}"
-        class="card-img-top"
-        alt="caracterImage"
-      />
+    <div class="card-img-top header">
+      <img src="{{ character.image }}" [alt]="character.name" />
     </div>
     <div class="card-body">
       <div class="card-text attributes">
         <!-- Properties of the character -->
+        <div class="mb-1">
+          <span [ngClass]="getClassColor(character.house)">{{
+            character.house ? character.house : "Without info"
+          }}</span>
+        </div>
         <div>
           <label class="strong" for=""><strong>Name: </strong></label>
           <span> {{ character.name }}</span>
@@ -33,10 +33,6 @@
               character.dateOfBirth ? character.dateOfBirth : "Without info"
             }}</span
           >
-        </div>
-        <div>
-          <label class="" for=""><strong>House: </strong></label>
-          <span> {{ character.house ? character.house : "Without info" }}</span>
         </div>
       </div>
     </div>

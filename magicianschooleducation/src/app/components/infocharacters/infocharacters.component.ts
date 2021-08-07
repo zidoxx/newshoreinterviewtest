@@ -19,4 +19,19 @@ export class InfocharactersComponent{
     this.characters = event;
   }
 
+  //Function to return a color depends of house of character
+  getClassColor(house:any){
+    if(house == 'Gryffindor'){
+      return 'badge bg-danger';
+    }else if(house == 'Slytherin'){
+      return 'badge bg-success';
+    }else if(house == 'Hufflepuff'){
+      return 'badge bg-warning text-dark';
+    }else if(house == 'Ravenclaw'){
+      return 'badge bg-primary';
+    }else{
+      return 'badge bg-dark';
+    }
+  }
+
 }
