@@ -11,7 +11,7 @@ export const environment = {
   //List of APIRest URLs for the application
   getAllCharacters: `${URL}characters`,
   getAllCharactersBook: `${URL}characters/students`,
-  getAllstaffBook: `${URL}characters/staff`,
+  getAllStaffBook: `${URL}characters/staff`,
   getAllHouseFindByHouse: `${URL}characters/house`,
 
 };

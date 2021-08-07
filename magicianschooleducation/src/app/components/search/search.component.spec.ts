@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SearchComponent } from './search.component';
 
 describe('SearchComponent', () => {
@@ -20,8 +19,7 @@ describe('SearchComponent', () => {
   });
 
   it('Options in Select must be equal to Array', () => {
-    let searchComponent = new SearchComponent();
-    const options = searchComponent.houses;
+    const options = component.houses;
     const houses = [
       "All",
       "Gryffindor",
