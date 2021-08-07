@@ -1,10 +1,10 @@
 # Newshoreinterview
 
-First open the carpet newshoreinterviewtest
+First open the carpet magicianschooleducation
 
 ### In console write
 
-**cd newshoreinterviewtest**
+**cd magicianschooleducation**
 
 Inside of the carpet run the command **ng serve -o** to run the project.
 
